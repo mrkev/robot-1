@@ -1,0 +1,134 @@
+#robot1 {
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 0.8em;
+  background-color: black;
+  /* transform: rotate(1deg); */
+  color: blanchedalmond;
+  border-radius: 2px;
+  padding: 8px 2px;
+}
+
+.mainPlate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px #edede8 solid;
+  background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=edeadfff&noise=626262&density=41&opacity=10);
+}
+
+.label {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 0.4em;
+  color: #2d1315;
+  text-transform: uppercase;
+  background-color: rgb(242, 82, 112, 0.6);
+  padding: 2px 6px 1px 6px;
+  margin-bottom: 4px;
+}
+
+.knobModule {
+  border-radius: 4px;
+  width: 90px;
+  height: 90px;
+  margin: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2px;
+}
+
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+body {
+  background: #1b1b1b;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* *,
+*:before,
+*:after {
+  box-sizing: border-box;
+} */
+body {
+  background: #1b1b1b;
+  user-select: none;
+}
+
+.wrapper {
+  width: 500px;
+  height: 80px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 0.7%;
+
+  background-image: -webkit-linear-gradient(top, #161616 0%, #1f1f1f 100%);
+}
+
+.button {
+  height: 22px;
+  width: 22px;
+  color: #818181;
+  background-image: linear-gradient(top, #383838 0%, #1f1f1f 5%, #161616 100%);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#1f1f1f),
+    to(#161616)
+  );
+  border-radius: 7px;
+  float: left;
+  box-shadow: 0 0 1px 1px rgb(10, 10, 10);
+  cursor: pointer;
+  position: relative;
+  font: normal 20px arial;
+  vertical-align: bottom;
+  transition: color 0.3s ease;
+}
+
+.button:active {
+  box-shadow: 0 0 1px 1px rgb(10, 10, 10), inset 0 2px 2px 0px black;
+}
+
+.button:before {
+  position: absolute;
+  content: "";
+  right: 5px;
+  top: 5px;
+
+  width: 12px;
+  height: 12px;
+  background: #646464;
+  background-image: radial-gradient(top, #616161 0%, #616161 20%, #535353 60%);
+  border-radius: 50%;
+  box-shadow: 0 0 4px #1c1c17;
+  transition: all 0.3s ease;
+}
+
+.button:checked + label:before {
+  background: #ff4f4f;
+  box-shadow: 0 0 4px #1c1c17, 0 0 5px #ff4242;
+}
+
+.button:active:before {
+  box-shadow: 0 0 4px #1c1c17, inset 0 2px 2px 0px #cc0000;
+}
+

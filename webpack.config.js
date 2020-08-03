@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const webpack = require("webpack");
 const WasmPackPlugin = require("@wasm-tool/wasm-pack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./index.js",
@@ -15,6 +16,10 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ["babel-loader"],
+      },
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
     ],
   },
@@ -31,6 +36,7 @@ module.exports = {
       TextDecoder: ["text-encoding", "TextDecoder"],
       TextEncoder: ["text-encoding", "TextEncoder"],
     }),
+    new MiniCssExtractPlugin(),
   ],
   mode: "development",
 };

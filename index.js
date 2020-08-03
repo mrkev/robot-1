@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import Knob from "./js/Knob.js";
 import LEDButton from "./js/LEDButton.js";
+import "./index.css";
+import "./ledbutton.css";
 
 function App() {
   const PRIMARY_FREQ_MIN = 30;
