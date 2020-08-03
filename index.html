@@ -1,0 +1,77 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="./ledbutton.css">
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  <style>
+    #robot1 {
+      font-family: monospace;
+      font-weight: 900;
+      font-size: 0.8em;
+      background-color: black;
+      /* transform: rotate(1deg); */
+      color: blanchedalmond;
+      border-radius: 2px;
+      padding: 8px 2px;
+    }
+
+    .mainPlate {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 2px #EDEDE8 solid;
+      background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=edeadfff&noise=626262&density=41&opacity=10)
+    }
+
+    .label {
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      letter-spacing: 2px;
+      font-size: 0.4em;
+      color: #2D1315;
+      text-transform: uppercase;
+      background-color: rgb(242, 82, 112, 0.6);
+      padding: 2px 6px 1px 6px;
+      margin-bottom: 4px;
+    }
+
+    .knobModule {
+      border-radius: 4px;
+      width: 90px;
+      height: 90px;
+      margin: 0px 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      background-color: black;
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 2px;
+    }
+
+    input[type=checkbox] {
+      height: 0;
+      width: 0;
+      visibility: hidden;
+    }
+
+    body {
+      background: #1b1b1b;
+      user-select: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
